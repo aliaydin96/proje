@@ -1,0 +1,36 @@
+# do garden_water.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:46:52 on Apr 26,2018
+# vlog -work work garden_water.vo 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 15:46:52 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 15:46:52 on Apr 26,2018
+# vlog -work work Waveform2.vwf.vt 
+# -- Compiling module control_vlg_sample_tst
+# -- Compiling module control_vlg_check_tst
+# -- Compiling module control_vlg_vec_tst
+# 
+# Top level modules:
+# 	control_vlg_vec_tst
+# End time: 15:46:52 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "garden_water.do" 
+# Start time: 15:46:53 on Apr 26,2018
+# Loading work.control_vlg_vec_tst
+# Loading work.control
+# Loading altera_ver.dffeas
+# Loading work.control_vlg_sample_tst
+# Loading work.control_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform2.vwf.vt(394)
+#    Time: 1 us  Iteration: 0  Instance: /control_vlg_vec_tst/tb_out
+# End time: 15:46:53 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

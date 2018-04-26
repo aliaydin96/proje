@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'control:comb_3|ssm[0]'
+Slack : -4.736
+TNS   : -30.874
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -4.514
+TNS   : -321.215
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.105
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'control:comb_3|ssm[0]'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -61.453
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'control:comb_3|ssm[0]'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'control:comb_3|ssm[0]'
+Slack : -4.860
+TNS   : -31.200
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -4.412
+TNS   : -311.610
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.127
+TNS   : -0.127
+
+Type  : Slow 1100mV 0C Model Hold 'control:comb_3|ssm[0]'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -65.456
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'control:comb_3|ssm[0]'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.230
+TNS   : -137.113
+
+Type  : Fast 1100mV 85C Model Setup 'control:comb_3|ssm[0]'
+Slack : -2.151
+TNS   : -13.973
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'control:comb_3|ssm[0]'
+Slack : 0.268
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.092
+TNS   : -10.344
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'control:comb_3|ssm[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'control:comb_3|ssm[0]'
+Slack : -2.045
+TNS   : -13.173
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.961
+TNS   : -114.343
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.074
+TNS   : -0.074
+
+Type  : Fast 1100mV 0C Model Hold 'control:comb_3|ssm[0]'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.088
+TNS   : -10.112
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'control:comb_3|ssm[0]'
+Slack : 0.453
+TNS   : 0.000
+
+------------------------------------------------------------
