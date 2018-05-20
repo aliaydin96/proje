@@ -1,0 +1,30 @@
+|adc
+analog_in => adc_out[11]~reg0.DATAIN
+adc_in => ~NO_FANOUT~
+clk => adc_out[0]~reg0.CLK
+clk => adc_out[1]~reg0.CLK
+clk => adc_out[2]~reg0.CLK
+clk => adc_out[3]~reg0.CLK
+clk => adc_out[4]~reg0.CLK
+clk => adc_out[5]~reg0.CLK
+clk => adc_out[6]~reg0.CLK
+clk => adc_out[7]~reg0.CLK
+clk => adc_out[8]~reg0.CLK
+clk => adc_out[9]~reg0.CLK
+clk => adc_out[10]~reg0.CLK
+clk => adc_out[11]~reg0.CLK
+adc_cs => ~NO_FANOUT~
+adc_out[0] <= adc_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[1] <= adc_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[2] <= adc_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[3] <= adc_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[4] <= adc_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[5] <= adc_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[6] <= adc_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[7] <= adc_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[8] <= adc_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[9] <= adc_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[10] <= adc_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_out[11] <= adc_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
