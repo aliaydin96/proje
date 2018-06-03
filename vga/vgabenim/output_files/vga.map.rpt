@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga
-Sat Jun 02 04:38:02 2018
+Sun Jun 03 17:36:56 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,11 +13,13 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "hvsync_generator:comb_100"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "hvsync_generator:comb_100"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,14 +45,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jun 02 04:38:02 2018       ;
+; Analysis & Synthesis Status     ; Successful - Sun Jun 03 17:36:56 2018       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; vga                                         ;
 ; Top-level Entity Name           ; vga                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 26                                          ;
-; Total pins                      ; 6                                           ;
+; Total registers                 ; 33                                          ;
+; Total pins                      ; 30                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -182,25 +184,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 20        ;
+; Estimate of Logic utilization (ALMs needed) ; 80        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 36        ;
+; Combinational ALUT usage for logic          ; 120       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 3         ;
-;     -- 5 input functions                    ; 2         ;
-;     -- 4 input functions                    ; 8         ;
-;     -- <=3 input functions                  ; 23        ;
+;     -- 6 input functions                    ; 39        ;
+;     -- 5 input functions                    ; 23        ;
+;     -- 4 input functions                    ; 23        ;
+;     -- <=3 input functions                  ; 35        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 26        ;
+; Dedicated logic registers                   ; 33        ;
 ;                                             ;           ;
-; I/O pins                                    ; 6         ;
+; I/O pins                                    ; 30        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk_25[0] ;
-; Maximum fan-out                             ; 23        ;
-; Total fan-out                               ; 188       ;
-; Average fan-out                             ; 2.54      ;
+; Maximum fan-out                             ; 34        ;
+; Total fan-out                               ; 662       ;
+; Average fan-out                             ; 3.11      ;
 +---------------------------------------------+-----------+
 
 
@@ -209,10 +211,33 @@ refer to the applicable agreement for further details.
 +--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name      ; Library Name ;
 +--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+------------------+--------------+
-; |vga                           ; 36 (8)              ; 26 (4)                    ; 0                 ; 0          ; 6    ; 0            ; |vga                           ; vga              ; work         ;
-;    |hvsync_generator:comb_100| ; 28 (28)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|hvsync_generator:comb_100 ; hvsync_generator ; work         ;
+; |vga                           ; 120 (94)            ; 33 (11)                   ; 0                 ; 0          ; 30   ; 0            ; |vga                           ; vga              ; work         ;
+;    |hvsync_generator:comb_100| ; 26 (26)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|hvsync_generator:comb_100 ; hvsync_generator ; work         ;
 +--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------+
+; Registers Removed During Synthesis                                 ;
++----------------------------------------+---------------------------+
+; Register name                          ; Reason for Removal        ;
++----------------------------------------+---------------------------+
+; vga_G[3]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_G[4]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_G[6]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_G[2]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_G[0]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_G[5]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_G[1]~reg0                          ; Merged with vga_G[7]~reg0 ;
+; vga_R[5]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; vga_R[0]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; vga_R[3]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; vga_R[6]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; vga_R[4]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; vga_R[2]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; vga_R[1]~reg0                          ; Merged with vga_R[7]~reg0 ;
+; Total Number of Removed Registers = 14 ;                           ;
++----------------------------------------+---------------------------+
 
 
 +------------------------------------------------------+
@@ -220,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 10    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -230,15 +255,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "hvsync_generator:comb_100"                                                                                                                                                                   ;
-+----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; clk            ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; CounterX[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-; CounterY[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-+----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "hvsync_generator:comb_100"                                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; clk  ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -246,24 +269,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 26                          ;
+; arriav_ff             ; 33                          ;
 ;     ENA               ; 9                           ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 7                           ;
-; arriav_lcell_comb     ; 38                          ;
+;     plain             ; 14                          ;
+; arriav_lcell_comb     ; 123                         ;
 ;     arith             ; 18                          ;
 ;         1 data inputs ; 17                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 20                          ;
-;         1 data inputs ; 4                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 3                           ;
-; boundary_port         ; 6                           ;
+;     normal            ; 105                         ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 23                          ;
+;         5 data inputs ; 23                          ;
+;         6 data inputs ; 39                          ;
+; boundary_port         ; 30                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.76                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.99                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +306,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Jun 02 04:37:51 2018
+    Info: Processing started: Sun Jun 03 17:36:43 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga -c vga
 Info (16303): High Performance Effort optimization mode selected -- timing performance will be prioritized at the potential cost of increased compilation time
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -291,23 +315,54 @@ Info (12021): Found 1 design units, including 1 entities, in source file hvsync_
     Info (12023): Found entity 1: hvsync_generator File: D:/Proje/vga/vgabenim/hvsync_generator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.v
     Info (12023): Found entity 1: vga File: D:/Proje/vga/vgabenim/vga.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at vga.v(15): instance has no name File: D:/Proje/vga/vgabenim/vga.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at vga.v(45): instance has no name File: D:/Proje/vga/vgabenim/vga.v Line: 45
 Info (12127): Elaborating entity "vga" for the top level hierarchy
-Info (12128): Elaborating entity "hvsync_generator" for hierarchy "hvsync_generator:comb_100" File: D:/Proje/vga/vgabenim/vga.v Line: 15
+Warning (10646): Verilog HDL Event Control warning at vga.v(50): posedge or negedge of vector "clk_25" depends solely on its least-significant bit File: D:/Proje/vga/vgabenim/vga.v Line: 50
+Warning (10230): Verilog HDL assignment warning at vga.v(130): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 130
+Warning (10230): Verilog HDL assignment warning at vga.v(152): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 152
+Warning (10230): Verilog HDL assignment warning at vga.v(163): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 163
+Warning (10230): Verilog HDL assignment warning at vga.v(174): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 174
+Warning (10230): Verilog HDL assignment warning at vga.v(185): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 185
+Warning (10230): Verilog HDL assignment warning at vga.v(197): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 197
+Warning (10230): Verilog HDL assignment warning at vga.v(208): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 208
+Warning (10230): Verilog HDL assignment warning at vga.v(219): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 219
+Warning (10230): Verilog HDL assignment warning at vga.v(230): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 230
+Warning (10230): Verilog HDL assignment warning at vga.v(241): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 241
+Warning (10762): Verilog HDL Case Statement warning at vga.v(120): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 120
+Warning (10762): Verilog HDL Case Statement warning at vga.v(247): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 247
+Warning (10762): Verilog HDL Case Statement warning at vga.v(353): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 353
+Warning (10762): Verilog HDL Case Statement warning at vga.v(467): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 467
+Warning (10762): Verilog HDL Case Statement warning at vga.v(572): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 572
+Warning (10762): Verilog HDL Case Statement warning at vga.v(687): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 687
+Warning (10762): Verilog HDL Case Statement warning at vga.v(790): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 790
+Warning (10762): Verilog HDL Case Statement warning at vga.v(844): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 844
+Warning (10762): Verilog HDL Case Statement warning at vga.v(957): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 957
+Warning (10762): Verilog HDL Case Statement warning at vga.v(1075): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 1075
+Warning (10762): Verilog HDL Case Statement warning at vga.v(1178): can't check case statement for completeness because the case expression has too many possible states File: D:/Proje/vga/vgabenim/vga.v Line: 1178
+Warning (10230): Verilog HDL assignment warning at vga.v(1282): truncated value with size 32 to match size of target (8) File: D:/Proje/vga/vgabenim/vga.v Line: 1282
+Warning (10230): Verilog HDL assignment warning at vga.v(1301): truncated value with size 32 to match size of target (1) File: D:/Proje/vga/vgabenim/vga.v Line: 1301
+Info (12128): Elaborating entity "hvsync_generator" for hierarchy "hvsync_generator:comb_100" File: D:/Proje/vga/vgabenim/vga.v Line: 45
 Warning (10230): Verilog HDL assignment warning at hvsync_generator.v(18): truncated value with size 32 to match size of target (10) File: D:/Proje/vga/vgabenim/hvsync_generator.v Line: 18
 Warning (10230): Verilog HDL assignment warning at hvsync_generator.v(27): truncated value with size 32 to match size of target (9) File: D:/Proje/vga/vgabenim/hvsync_generator.v Line: 27
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file D:/Proje/vga/vgabenim/output_files/vga.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 158 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 39 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Sat Jun 02 04:38:02 2018
-    Info: Elapsed time: 00:00:11
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 128 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Sun Jun 03 17:36:56 2018
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:27
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Proje/vga/vgabenim/output_files/vga.map.smsg.
 
 

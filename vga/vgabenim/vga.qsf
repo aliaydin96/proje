@@ -48,40 +48,43 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name VERILOG_FILE hvsync_generator.v
 set_global_assignment -name VERILOG_FILE vga.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
 set_location_assignment PIN_AF14 -to clk
 set_location_assignment PIN_A11 -to vga_clk
-set_location_assignment PIN_F10 -to blank
-set_location_assignment PIN_C10 -to sync
-set_location_assignment PIN_C13 -to rgb[1]
-set_location_assignment PIN_E13 -to rgb[2]
-set_location_assignment PIN_B12 -to rgb[3]
-set_location_assignment PIN_C12 -to rgb[4]
-set_location_assignment PIN_D12 -to rgb[5]
-set_location_assignment PIN_E12 -to rgb[6]
-set_location_assignment PIN_F13 -to rgb[7]
-set_location_assignment PIN_J10 -to gg[1]
-set_location_assignment PIN_H12 -to gg[2]
-set_location_assignment PIN_G10 -to gg[3]
-set_location_assignment PIN_G11 -to gg[4]
-set_location_assignment PIN_G12 -to gg[5]
-set_location_assignment PIN_F11 -to gg[6]
-set_location_assignment PIN_E11 -to gg[7]
-set_location_assignment PIN_G13 -to bb[1]
-set_location_assignment PIN_H13 -to bb[2]
-set_location_assignment PIN_F14 -to bb[3]
-set_location_assignment PIN_H14 -to bb[4]
-set_location_assignment PIN_F15 -to bb[5]
-set_location_assignment PIN_G15 -to bb[6]
-set_location_assignment PIN_J14 -to bb[7]
 set_location_assignment PIN_B11 -to vga_h_sync
 set_location_assignment PIN_D11 -to vga_v_sync
-set_location_assignment PIN_A13 -to vga_R
-set_location_assignment PIN_J9 -to vga_G
-set_location_assignment PIN_B13 -to vga_B
+set_location_assignment PIN_F10 -to vga_blank
+set_location_assignment PIN_C10 -to vga_sync
+set_location_assignment PIN_C13 -to vga_R[1]
+set_location_assignment PIN_E13 -to vga_R[2]
+set_location_assignment PIN_B12 -to vga_R[3]
+set_location_assignment PIN_C12 -to vga_R[4]
+set_location_assignment PIN_D12 -to vga_R[5]
+set_location_assignment PIN_E12 -to vga_R[6]
+set_location_assignment PIN_F13 -to vga_R[7]
+set_location_assignment PIN_J10 -to vga_G[1]
+set_location_assignment PIN_H12 -to vga_G[2]
+set_location_assignment PIN_G10 -to vga_G[3]
+set_location_assignment PIN_G11 -to vga_G[4]
+set_location_assignment PIN_G12 -to vga_G[5]
+set_location_assignment PIN_F11 -to vga_G[6]
+set_location_assignment PIN_E11 -to vga_G[7]
+set_location_assignment PIN_G13 -to vga_B[1]
+set_location_assignment PIN_H13 -to vga_B[2]
+set_location_assignment PIN_F14 -to vga_B[3]
+set_location_assignment PIN_H14 -to vga_B[4]
+set_location_assignment PIN_F15 -to vga_B[5]
+set_location_assignment PIN_G15 -to vga_B[6]
+set_location_assignment PIN_J14 -to vga_B[7]
+set_location_assignment PIN_A13 -to vga_R[0]
+set_location_assignment PIN_J9 -to vga_G[0]
+set_location_assignment PIN_B13 -to vga_B[0]
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform1.vwf
+set_global_assignment -name ADVANCED_PHYSICAL_OPTIMIZATION OFF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,7 +1,4 @@
 |vga
-clk => vga_B~reg0.CLK
-clk => vga_G~reg0.CLK
-clk => vga_R~reg0.CLK
 clk => clk_25[0].CLK
 clk => clk_25[1].CLK
 clk => clk_25[2].CLK
@@ -36,9 +33,33 @@ clk => clk_25[30].CLK
 clk => clk_25[31].CLK
 vga_h_sync <= hvsync_generator:comb_100.vga_h_sync
 vga_v_sync <= hvsync_generator:comb_100.vga_v_sync
-vga_R <= vga_R~reg0.DB_MAX_OUTPUT_PORT_TYPE
-vga_G <= vga_G~reg0.DB_MAX_OUTPUT_PORT_TYPE
-vga_B <= vga_B~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[0] <= vga_R[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[1] <= vga_R[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[2] <= vga_R[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[3] <= vga_R[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[4] <= vga_R[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[5] <= vga_R[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[6] <= vga_R[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_R[7] <= vga_R[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[0] <= vga_G[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[1] <= vga_G[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[2] <= vga_G[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[3] <= vga_G[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[4] <= vga_G[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[5] <= vga_G[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[6] <= vga_G[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G[7] <= vga_G[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[0] <= vga_B[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[1] <= vga_B[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[2] <= vga_B[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[3] <= vga_B[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[4] <= vga_B[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[5] <= vga_B[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[6] <= vga_B[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B[7] <= vga_B[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_clk <= clk_25[0].DB_MAX_OUTPUT_PORT_TYPE
+vga_blank <= vga_blank.DB_MAX_OUTPUT_PORT_TYPE
+vga_sync <= vga_sync.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |vga|hvsync_generator:comb_100
