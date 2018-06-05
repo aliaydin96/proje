@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Proje/biz/storage/simulation/modelsim
+vstorage
+Z1 !s110 1528152856
+!i10b 1
+!s100 Jm1Rl?hSA5_PeA:R@OcNi1
+IFN3HDSTGhD_`zznU82ilb1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1528152782
+Z4 8D:/Proje/biz/storage/storage.v
+Z5 FD:/Proje/biz/storage/storage.v
+L0 24
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1528152856.000000
+Z8 !s107 D:/Proje/biz/storage/storage.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Proje/biz/storage|D:/Proje/biz/storage/storage.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+D:/Proje/biz/storage
+Z12 tCvgOpt 0
+vstorage_tb
+R1
+!i10b 1
+!s100 F_ZLPl5L5c[7dYbi>5A0e1
+IMII3Z^So5o3h8;Ef;CaZ71
+R2
+R0
+R3
+R4
+R5
+L0 62
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

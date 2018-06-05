@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at vga.v(50): always construct contains both blocking and non-blocking assignments File: D:/Proje/vga/vgabenim/vga.v Line: 50
+Warning (10268): Verilog HDL information at vga.v(100): always construct contains both blocking and non-blocking assignments File: D:/Proje/vga/vgabenim/vga.v Line: 100

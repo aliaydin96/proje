@@ -76,38 +76,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "vga_B[0]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[3]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[4]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[5]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[6]",
-					"strict" : false
-				},
-				{
-					"name" : "vga_B[7]",
-					"strict" : false
-				},
-				{
 					"name" : "vga_clk",
 					"strict" : false
 				},
@@ -120,7 +88,151 @@
 					"strict" : false
 				},
 				{
+					"name" : "freq[3]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[2]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "offset[0]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[1]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[2]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[3]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[4]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[5]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[6]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[7]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[8]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[9]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[10]",
+					"strict" : false
+				},
+				{
+					"name" : "offset[11]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[8]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[9]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[10]",
+					"strict" : false
+				},
+				{
+					"name" : "vpp[11]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[4]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[6]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[7]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[5]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[10]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[11]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[8]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[9]",
 					"strict" : false
 				}
 			]

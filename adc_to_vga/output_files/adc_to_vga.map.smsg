@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at ADC.v(82): always construct contains both blocking and non-blocking assignments File: D:/Proje/adc_to_vga/ADC.v Line: 82
+Warning (10268): Verilog HDL information at vga.v(113): always construct contains both blocking and non-blocking assignments File: D:/Proje/adc_to_vga/vga.v Line: 113
